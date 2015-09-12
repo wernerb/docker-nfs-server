@@ -1,4 +1,5 @@
-FROM ubuntu
+FROM ubuntu:14.04.3
+
 ENV DEBIAN_FRONTEND noninteractive
 RUN apt-get update -qq && apt-get install -y nfs-kernel-server runit inotify-tools -qq
 RUN mkdir -p /exports
